@@ -93,8 +93,6 @@
   background: #ff3e79 url("../Image/checkstatus.svg") no-repeat 50% 50%;
   margin-left: 8px;
 }
-.button__icon {
-}
 .button_margin-none {
   margin-right: 0;
 }
@@ -180,12 +178,14 @@
 }
 .list {
   list-style-type: none;
+}
+.main__list {
   display: flex;
   overflow: scroll;
   align-items: center;
 }
 @media (min-width: 1120px) {
-  .list {
+  .main__list {
     flex-wrap: wrap;
     overflow: auto;
   }
@@ -241,25 +241,8 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  font-weight: 500;
+  font-weight: 600;
   padding-left: 16px;
-}
-.information__image {
-  margin-bottom: 24px;
-  width: 320px;
-  height: 230px;
-}
-@media (min-width: 768px) {
-  .information__image {
-    width: 360px;
-    height: 260px;
-  }
-}
-@media (min-width: 1120px) {
-  .information__image {
-    width: 531px;
-    height: 383px;
-  }
 }
 .image-stand {
   width: 100%;
@@ -274,4 +257,88 @@
   .information__show-all {
     margin-top: 14px;
   }
+}
+
+/* sidebar */
+
+.body-background {
+  background: #f8f8f8;
+}
+.sidebar {
+  background: #ffffff;
+  width: 320px;
+  padding: 24px;
+}
+.sidebar__header,
+.sidebar__header-partition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close {
+  background: #ff3e79 url("../Image/close.svg") no-repeat 50% 50%;
+  order: -1;
+}
+.search {
+  background: #ff3e79 url("../Image/search.svg") no-repeat 50% 50%;
+  margin-right: 0;
+}
+.sidebar__nav {
+  margin-top: 50px;
+}
+.nav__item {
+  margin-bottom: 32px;
+}
+.nav__item_active {
+  color: #7e7e82;
+}
+.nav__item_active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #41f6d7;
+  height: 32px;
+  width: 4px;
+  margin-top: -5px;
+}
+.footer__feedback {
+  padding-top: 236px;
+}
+.footer__email {
+  margin-top: 16px;
+}
+.footer__telephone {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+.language .button {
+  font-family: "TT Lakes";
+  margin-top: 40px;
+  margin-right: 7px;
+}
+.button:hover {
+  transform: scale(1.2);
+  transition: 1.5s;
+  box-shadow: inset 0 0 5px 5px blue, inset 0 0 5px 15px rgb(190, 190, 230);
+}
+.button::after {
+  content: "";
+  background: url("../Image/v.svg");
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  opacity: 0;
+}
+.button:hover::after {
+  opacity: 1;
+  transition: 1.5s;
+}
+.nav__item:hover,
+.list__item:hover {
+  cursor: pointer;
 }
