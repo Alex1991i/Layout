@@ -320,12 +320,15 @@
   margin-top: 40px;
   margin-right: 7px;
 }
+.nav__item:hover,
+.list__item:hover,
 .button:hover {
   transform: scale(1.2);
   transition: 1.5s;
   box-shadow: inset 0 0 5px 5px blue, inset 0 0 5px 15px rgb(190, 190, 230);
+  cursor: pointer;
 }
-.button::after {
+/* .button::after {
   content: "";
   background: url("../Image/v.svg");
   background-size: 100%;
@@ -334,12 +337,8 @@
   position: absolute;
   right: 0px;
   opacity: 0;
-}
-.button:hover::after {
+} */
+/* .button:hover::after {
   opacity: 1;
   transition: 1.5s;
-}
-.nav__item:hover,
-.list__item:hover {
-  cursor: pointer;
-}
+} */
