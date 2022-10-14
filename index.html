@@ -8,64 +8,42 @@
     <title>Maket</title>
   </head>
   <body class="page-body">
-    <div class="container">
+    <div class="page-body__container">
       <header class="header">
-        <div class="header__partition">
+        <div class="block">
           <div class="header__logo">
             <img src="./Image/logo.svg" alt="Логотип" class="logo" />
           </div>
           <div class="header__burger">
-            <button class="button button_margin-none btn">
-              <img src="./Image/burger.svg" alt="Меню" class="button__icon" />
-            </button>
+            <button
+              class="button button__form burger button_margin-none"
+            ></button>
           </div>
         </div>
-        <div class="header__partition">
-          <div class="header__feedback">
-            <button class="button btn">
-              <img src="./Image/call.svg" alt="Телефон" class="button__icon" />
-            </button>
-            <button class="button btn">
-              <img src="./Image/chat.svg" alt="Чат" class="button__icon" />
-            </button>
-            <button class="button button__profile btn">
-              <img
-                src="./Image/profile.svg"
-                alt="Профиль"
-                class="button__icon"
-              />
-            </button>
+        <div class="block">
+          <div class="header__feedback feedback">
+            <button class="button button__form call"></button>
+            <button class="button button__form chat"></button>
+            <button class="button button__form profile"></button>
           </div>
           <div class="header__repair">
-            <button class="button btn">
-              <img
-                src="./Image/repair.svg"
-                alt="Оставить заявку"
-                class="button__icon"
-              />
-            </button>
-            <button class="button button_margin-none btn">
-              <img
-                src="./Image/checkstatus.svg"
-                alt="Статус ремонта"
-                class="button__icon"
-              />
-            </button>
+            <button
+              class="button button__form repair button_margin-none"
+            ></button>
+            <button class="button button__form status"></button>
           </div>
         </div>
       </header>
       <main class="main">
         <div class="main__header">
           <h1 class="main__title">Услуги и сервисы</h1>
-          <div class="main__button">
-            <button class="button button__position">
-              Оставить заявку
-              <div class="btn repair"></div>
-            </button>
-            <button class="button button__position">
-              Статус ремонта
-              <div class="btn checkstatus"></div>
-            </button>
+          <div class="main__button block">
+            <div>Оставить заявку</div>
+            <button
+              class="button button__form repair button__position"
+            ></button>
+            <p>Статус ремонта</p>
+            <button class="button button__form status"></button>
           </div>
         </div>
         <nav class="main__menu">
