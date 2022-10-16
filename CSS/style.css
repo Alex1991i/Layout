@@ -55,7 +55,7 @@
 .button_margin-none {
   margin-left: 0;
 }
-.block,
+.block-container,
 .header {
   display: flex;
   justify-content: space-between;
