@@ -4,7 +4,9 @@
 .sidebar {
   background: #ffffff;
   width: 320px;
+  height: 100vh;
   padding: 24px;
+  overflow-y: auto;
 }
 .sidebar__logo {
   margin-left: 16px;
@@ -47,6 +49,10 @@
   letter-spacing: -0.6px;
   font-weight: 600;
   margin-top: 12px;
+}
+.footer__link {
+  text-decoration: none;
+  color: black;
 }
 .language .button {
   margin-top: 40px;
