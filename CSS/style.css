@@ -55,8 +55,7 @@
 .button_margin-none {
   margin-left: 0;
 }
-.block-container,
-.header {
+.block-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,8 +99,7 @@
     border-radius: 1px;
   }
 }
-.header__feedback,
-.main__button {
+.hide-part {
   display: none;
 }
 @media (min-width: 768px) {
