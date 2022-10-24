@@ -22,6 +22,7 @@
     padding-left: 0;
     height: 160px;
     overflow: hidden;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }
